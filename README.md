@@ -1,15 +1,31 @@
-# ollama-bash-completion-plugin
+<div align="center">
 
-Tiny plugin for bash shell to autocomplete commands and model names in ollama commands.
+# Sherpa
+
+</div>
+
+Tiny plugin for bash shell to autocomplete commands and model names in Ollama.
+
+<div align="center">
+  <img src=".github/sherpa.jpeg" width="300"/>
+</div>
 
 ## Content
-
+- [Why this plugin?](#why-this-plugin)
+- [Installation](#installation)
+  - [System Installation](#system-installation)
+  - [User Installation](#user-installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 
 ## Why this plugin?
-Have you ever tried to use `ollama` commands and forgot the name of the model you wanted to use? Have you ever had to type again `ollama ps` to see the list of models you have? This plugin is for you!
+Have you ever tried to use `ollama` commands and forgot the name of the model you wanted to use? Have you ever had to type again `ollama ps` to see the list of models you have? Save your time and follow the *tab flow* of Unix programs.
 
-This plugin is a simple bash completion plugin for `ollama` commands. It will autocomplete the commands and the model names in `ollama` commands.
+<div align="center">
+  <img src=".github/demo.gif" width="550"/>
+</div>
 
 ## Installation
 1. Clone this repository to your local machine:
@@ -42,8 +58,6 @@ source /etc/bash_completion.d/ollama
 
 2. Verify that the plugin is working by typing `ollama` and pressing the `Tab` key. You should see a list of available commands and model names.
 
->[To be completed for other systems]
-
 ### User Installation
 
 1. Create a directory for your custom bash completion scripts:
@@ -70,6 +84,9 @@ source ~/.bashrc
 
 ## Usage
 Once you have installed the plugin, you can use it by typing `ollama` followed by a space and then pressing the `Tab` key. This will show you a list of available commands and model names.
+
+> [!IMPORTANT]  
+> `ollama` serve must be running in the background for the plugin to work.
 
 Commands that are available for autocompletion:
   - `ollama`      General command
